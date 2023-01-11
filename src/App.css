@@ -1,0 +1,285 @@
+.header {
+    padding: 24px 32px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 24px;
+}
+
+.nav__item {
+    padding: 5px 10px;
+}
+
+.nav__item > a {
+    font-weight: 600;
+}
+
+.nav__item > a:hover {
+    color: var(--yellow);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 32px;
+    max-width: 1024px;
+}
+
+:root {
+    font-family: 'Karla', sans-serif;
+    --yellow: #f4ce14;
+    --black: #333333;
+}
+
+*,
+*::after,
+*::before {
+    font-family: inherit;
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    padding: 48px 0;
+    margin-bottom: 64px;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__container-item {
+    flex: 0 0 45%;
+}
+
+.hero__container-item > img {
+    width: 100%;
+}
+
+.hero__title {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.hero__sub-title {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+}
+
+.hero__text {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 64px;
+}
+
+.btn {
+    padding: 16px 32px;
+    background-color: var(--black);
+    border-radius: 16px;
+    font-size: 1.2rem;
+    color: white;
+    width: fit-content;
+}
+
+.specials {
+    padding-bottom: 64px;
+}
+
+.specials__heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.specials__title {
+    font-size: 1.6rem;
+}
+
+.specials__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specials__card {
+    background-color: #eeeeee;
+    width: 300px;
+    border-radius: 16px 16px 0 0;
+}
+
+.specials__card-img {
+    height: 200px;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.specials__card-title {
+    font-size: 1.4;
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding-top: 8px;
+    padding-left: 16px;
+}
+
+.specials__card-text {
+    line-height: 1.2;
+    padding: 16px;
+}
+
+.testimonials {
+    padding: 120px 0;
+    background-color: #eeeeee;
+}
+
+.testimonials__title {
+    margin-bottom: 48px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.testimonials__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__card {
+    padding: 24px;
+    background-color: white;
+    width: 180px;
+    box-sizing: border-box;
+}
+
+.testimonials__card-title > img {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 12px;
+}
+
+.testimonials__card-img-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonials__card-img {
+    height: 60px;
+    width: 60px;
+}
+
+.testimonials__card-name {
+    font-size: 1rem;
+}
+
+.about {
+    padding: 64px 0;
+}
+
+.about__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__container-item {
+    flex: 0 0 45%;
+}
+
+.about__container-item > img {
+    width: 100%;
+}
+
+.about__title {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.about__sub-title {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+}
+
+.about__text {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 64px;
+}
+
+.about__img-1 {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    top: 100px;
+}
+
+.about__img-2 {
+    position: absolute;
+    left: 100px;
+    width: 200px;
+    top: 0px;
+}
+
+.footer {
+    background-color: #eeeeee;
+    padding: 64px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer__list-item {
+    margin-bottom: 10px;
+}
+
+.footer__img {
+    width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero__container,
+    .about__container,
+    .specials__cards,
+    .testimonials__container,
+    .footer__container {
+        display: block;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .about__container-item:last-child {
+        height: 400px;
+    }
+
+    .about__container-item > img {
+        width: 60%;
+    }
+
+    .specials__card,
+    .testimonials__card,
+    .footer__item {
+        margin-bottom: 20px;
+    }
+
+    .hero__container,
+    .about__container > div:first-child {
+        margin-bottom: 24px;
+    }
+}
